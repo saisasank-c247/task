@@ -1,0 +1,28 @@
+[
+    {
+      "userid": 1,
+      "userName": "Jenny Chan",
+      "email": "jenny.chan@email.com"
+    },
+    {
+      "userid": 2,
+      "userName": "Jessica warren",
+      "email": "jessica.warren@email.com"
+    },
+    {
+      "userid": 3,
+      "userName": "Tony Frank",
+      "email": "tony.frank@email.com"
+    },
+    {
+      "userid": 4,
+      "userName": "Jeremy Clark",
+      "email": "jeremy.clark@email.com"
+    },
+    {
+      "userid": 5,
+      "userName": "Raymond Edwards",
+      "email": "raymon.edwards@email.com"
+    }
+  ]
+  
