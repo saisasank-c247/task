@@ -1,12 +1,18 @@
-import React from "react"
+import { Layout, Menu } from 'antd';
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
 const { Header, Content, Footer } = Layout;
 
 export default (props) => {
     const navigate = useNavigate();
+    const [menu,setMenu] = useState('1');
     const clickMenu = (e) => {
+        setMenu(e.key)
+        console.log(e)
+        if(e.key == '1')
         navigate('/')
+        else 
+        navigate('/calendar')
     }
     return (
         <Layout>
@@ -15,7 +21,7 @@ export default (props) => {
                     theme="dark"
                     onClick={clickMenu}
                     mode="horizontal"
-                    defaultSelectedKeys={['1']}
+                    defaultSelectedKeys={[menu]}
                     items={["Users", "Calendar"].map((item, index) => ({
                         key: String(index + 1),
                         label: `${item}`,
